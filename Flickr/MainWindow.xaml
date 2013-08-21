@@ -1,25 +1,15 @@
 ﻿<Window x:Class="Flickr.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:msShell="clr-namespace:Microsoft.Windows.Shell;assembly=Microsoft.Windows.Shell" 
         Title="MainWindow" Height="350" Width="525">
     
-    <!--http://www.microsoft.com/en-us/download/details.aspx?id=11877-->
-    
-    <msShell:WindowChrome.WindowChrome>
-        <msShell:WindowChrome CaptionHeight="{DynamicResource {x:Static SystemParameters.WindowCaptionHeightKey}}" 
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="{DynamicResource {x:Static SystemParameters.WindowCaptionHeightKey}}" 
                                       GlassFrameThickness="0" CornerRadius="0" ResizeBorderThickness="6" UseAeroCaptionButtons="False"/>
-    </msShell:WindowChrome.WindowChrome>
+    </WindowChrome.WindowChrome>
 
     <Grid>
-        <StackPanel>
-            <Button></Button>
-            <Button></Button>
-            <Button></Button>
-            <Button></Button>
-            <Button></Button>
-            <Button></Button>
-            <Button></Button>
-        </StackPanel>
+        <WrapPanel x:Name="pnl">
+        </WrapPanel>
     </Grid>
 </Window>

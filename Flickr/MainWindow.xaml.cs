@@ -23,6 +23,16 @@ namespace Flickr
         public MainWindow()
         {
             InitializeComponent();
+
+            for (int i = 0; i < 10000; i++)
+            {
+                pnl.Children.Add(new Button()
+                {
+                    Content = string.Format("Button {0}", i),
+                    Width = 100,
+                    Height = 25
+                });
+            }
         }
     }
 }
